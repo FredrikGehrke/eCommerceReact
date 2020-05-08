@@ -125,7 +125,7 @@ export default function ProductDetails() {
                                 </div>
                                 <div className="row mt-3">
                                     <div className="col-md-12 text-center text-md-left text-md-right">
-                                        <button className="btn btn-green btn-md" onClick={add}>
+                                        <button className="btn blue-gradient btn-md" onClick={add}>
                                         <i className="fas fa-cart-plus mr-2" aria-hidden="true"></i> Lägg till i varukorgen</button>
                                     </div>
                                 </div>

@@ -9,7 +9,7 @@ export const Navigation = () => {
     const quantity = useSelector(state => state.cart.totalCartQuantity)
 
     return (
-        <nav className="mb-1 navbar navbar-expand-lg navbar-dark green">
+        <nav className="mb-1 navbar navbar-expand-lg navbar-dark blue-gradient">
             <div className="container">
                 <Link className="navbar-brand" to="/"><i className="fab fa-artstation"></i> Astore.se</Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +29,7 @@ export const Navigation = () => {
 
                             <MDBDropdown>
                                 <MDBDropdownToggle nav caret>
-                                    {quantity } <MDBIcon icon="shopping-cart" />
+                                    { quantity } <MDBIcon icon="shopping-cart" />
                                 </MDBDropdownToggle>
                                 <MDBDropdownMenu right basic className="dropdown-default shopping-cart">
                                     <Cart />

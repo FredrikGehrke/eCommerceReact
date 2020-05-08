@@ -6,8 +6,6 @@ import { addToCart, removeFromCart } from '../store/actions/cartActions'
 export default function CartItem({item}) {
     const dispatch = useDispatch()
 
-    console.log(item)
-
     const add = (event) => {    
         event.stopPropagation()
 

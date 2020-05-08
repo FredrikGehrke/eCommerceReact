@@ -7,7 +7,7 @@ export default function Home() {
             <h1>Home Page</h1>
             <p>Nothing interesting to see here...</p>
             <div>
-                <Link to="/products" className="btn btn-green btn-md nav-item">
+                <Link to="/products" className="btn blue-gradient btn-md nav-item">
                 <i className="fas fa-shopping-cart mr-2" ></i> Go to Products</Link>
             </div>
         </div>

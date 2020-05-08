@@ -12,14 +12,14 @@ export default function Cart() {
     const save = (shoppingcart) => {   
         dispatch(checkoutCart(shoppingcart))
     }
-    console.log(shoppingcart)
+
     return (
         <div>
             <div className="mb-4">
                 {
-                shoppingcart.map(product => {
-                    return <CartItem key={product._id} item={product} />
-                })
+                    shoppingcart.map(product => {
+                        return <CartItem key={product._id} item={product} />
+                    })
                 }
             </div>
             
@@ -27,7 +27,7 @@ export default function Cart() {
 
             <p className="ml-4" style={{fontSize: "26px"}}><strong>Totala pris:</strong> {totalCartAmount} SEK</p>
             <p className="ml-4" style={{fontSize: "26px"}}><strong>Totala antal:</strong> {totalCartQuantity}</p>
-            <button className="btn btn-green btn-md ml-4" onClick={() => save(shoppingcart)}>Gå till kassan</button>
+            <button className="btn blue-gradient btn-md ml-4" onClick={() => save(shoppingcart)}>Gå till kassan</button>
         </div>
     )
 }
